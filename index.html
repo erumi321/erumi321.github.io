@@ -15,125 +15,160 @@
 </head>
 
 <body>
-    <div id="toc">
-        <button id="toc-sgg" onclick="document.getElementById('sgg').scrollIntoView({behavior: 'smooth'})">Supergiant Games</button>
-        <!--Do I want to change this as you now, i dont work at SGG-->
-        <button id="toc-designs" onclick="document.getElementById('designs').scrollIntoView({behavior: 'smooth'})">Digital Designs</button>
-        <button id="toc-work" onclick="document.getElementById('work').scrollIntoView({behavior: 'smooth'})">Work Experience</button>
-    </div>
+
     <img src="images/personal_picture.jpg" alt="A picture of myself smiling." id="hero-personalimage">
     <div id="hero">
         <h1 id="hero-header">Hello, I'm <br> Eli Ruminer</h1>
         <h3 id="hero-username">@erumi321</h3>
         <a href="https://github.com/erumi321"><img class="logo" src="images/github-mark.png" alt="Github Logo"></a>
         <a href="https://x.com/erumi321"><img class="logo" src="images/twitter-mark.png" alt="Twitter/X Logo"></a>
-        <a href="https://x.com/erumi321"><img class="logo" src="images/mail-mark.svg" alt="Email Icon"></a>
+        <a href="mailto: erumi321@gmail.com"><img class="logo" src="images/mail-mark.svg" alt="Email Icon"></a>
         <h5 id="hero-subheader"><u>Hobby developer</u> from Massachusetts
             <br><u>Computer Science</u> student at RPI
-        <br><u>Work</u> down below</h5>
+            <br><u>Work</u> down below
+        </h5>
+        <div id="toc">
+            <button id="toc-sgg"
+                onclick="document.getElementById('sgg').scrollIntoView({behavior: 'smooth'})">Supergiant
+                Games</button>
+            <!--Do I want to change this as you now, i dont work at SGG-->
+            <button id="toc-designs"
+                onclick="document.getElementById('designs').scrollIntoView({behavior: 'smooth'})">Digital
+                Designs</button>
+            <button id="toc-work" onclick="document.getElementById('work').scrollIntoView({behavior: 'smooth'})">Work
+                Experience</button>
+        </div>
         <!-- <img src="images/personal.jpg" alt="" id="personal-pic"> -->
 
     </div>
 
     <div id="main">
         <div id="sgg">
-            <h1 id="sgg-title">Supergiant Games</h1>
+            <h1 id="sgg-title" class="largetitle">Supergiant Games</h1>
+            <a class="returntotop" onclick="window.scrollTo({top: 0, behavior: 'smooth'})">Return to Top</a>
             <p>This is all work done as mods or tools to the games Pyre, Hades, and Hades 2 developed and produced by
                 Supergiant Games (<a href="https://www.supergiantgames.com/"
                     target="_blank">https://www.supergiantgames.com</a>)</p>
             <div id="sgg-container-parent">
                 <div id="sgg-UI-container">
                     <h1 class="sgg-sectiontitle" id="sgg-UI-title">UI</h1>
-                    <p>All menus shown here were made utilizing only resources and images found within Supergiant Game's games Pyre, Hades, and Hades 2:</p>
+                    <p>All menus shown here were made utilizing only resources and images found within Supergiant Game's
+                        games Pyre, Hades, and Hades 2:</p>
                     <div class="sgg-card-container">
-                        <div class="sgg-card" id="UI-ron">
+                        <div class="sgg-card" id="UI-ron" style="margin-right: 3vw;">
                             <h2 class="sgg-card-title">Pyre in Hades</h2>
                             <div class="video-container">
                                 <video muted=1 allow="autoplay" src="videos/UI_ron.mp4" class="sgg-video"></video>
                             </div>
-                            <h3>An example mod for creating new maps included this UI. Created mostly by utilizing images from Pyre.</h3>
+                            <p>An example mod for creating new maps included this UI. Created mostly by utilizing
+                                images from Pyre.</p>
+                        </div>
+
+                        <div class="sgg-card" id="UI-library">
+                            <h2 class="sgg-card-title">UI Library</h2>
+                            <div class="video-container">
+                                <video muted=1 allow="autoplay" src="videos/UI_library2.mp4" class="sgg-video"></video>
+                            </div>
+                            <p>A library for both Hades 1 and Hades 2 implementing many different UI components,
+                                utilized by the Hades 1 speedrunning community</p>
                         </div>
                         <div class="sgg-card" id="UI-challenge">
                             <h2 class="sgg-card-title">Challenge Mod</h2>
                             <div class="video-container">
                                 <img src="images/UI_challenge.png" class="sgg-video"></img>
                             </div>
-                            <h3>A mod which would interface with PonyWarrior's challenge mod implemented this UI.</h3>
-                        </div>
-                        <div class="sgg-card" id="UI-library">
-                            <h2 class="sgg-card-title">UI Library</h2>
-                            <div class="video-container">
-                                <video muted=1 allow="autoplay" src="videos/UI_library2.mp4" class="sgg-video"></video>
-                            </div>
-                            <h3>A library for both Hades 1 and Hades 2 implementing many different UI components, utilized by the Hades 1 speedrunning community</h3>
+                            <p>A mod that interfaces with PonyWarrior's challenge mod implemented this UI.</p>
                         </div>
                     </div>
                 </div>
                 <div id="sgg-accessibility-container">
                     <h2 class="sgg-sectiontitle" id="sgg-accessibility-title">Accessibility Mods</h2>
-                    <div class="sgg-card" id="Accessibility-card">
-                        <!-- <h2 class="sgg-card-title">Accesibility Mods</h2> -->
-                        <h3>Mods for both Hades 1 and Hades 2 which overhaul many menus and aspects of the game to allow blind or visually-impaired players to play the game.
-                            <br><br> Made with support and feedback of players at <a href="https://forum.audiogames.net/">https://forum.audiogames.net/</a>.
-                            <br><br> Hades 2 accessibility features are in active development and include a built-in text-to-speech interfacing with the menus of the game. 
-                        </h3>
+                    <div class="sgg-card-container" style="width: 100%;">
+                        <div class="sgg-card" id="Accessibility-card">
+                            <!-- <h2 class="sgg-card-title">Accesibility Mods</h2> -->
+                            <p>Mods for both Hades 1 and Hades 2 which overhaul many menus and aspects of the game to
+                                allow blind or visually impaired players to play the game.
+                                <br><br> Made with support and feedback of players at <a
+                                    href="https://forum.audiogames.net/">https://forum.audiogames.net/</a>.
+                                <br><br> Hades 2 accessibility features are in active development and include a built-in
+                                text-to-speech system which automatically interfaces with the menus in-game.
+                            </p>
+                        </div>
                     </div>
                 </div>
                 <div id="sgg-map-container">
                     <h2 class="sgg-sectiontitle" id="sgg-map-title">Map Editing</h2>
-                    <div class="sgg-card" id="map-card">
-                        <div class="video-container">
-                            <img src="images/Maps_NewMap.png" class="map-image"></img>
+                    <div class="sgg-card-container" style="width: 100%;">
+                        <div class="sgg-card" id="map-card">
+                            <div class="video-container">
+                                <img src="images/Maps_NewMap.png" class="map-image"></img>
+                            </div>
+                            <p>I reverse engineered Supergiant's proprietary map binaries allowing compilation and
+                                decompilation. This allows
+                                adding new maps (as seen above) or editing existing ones.</p>
                         </div>
-                        <p>Created a tool to compile and decompile Supergiant's propritary map binaries. This allows adding new maps (as seen above) or editing existing ones.</p>
                     </div>
                 </div>
             </div>
         </div>
         <div id="designs">
-            <h1 id="designs-title">Digital Designs</h1>
+            <h1 id="designs-title" class="largetitle">Digital Designs</h1>
+            <a class="returntotop" onclick="window.scrollTo({top: 0, behavior: 'smooth'})">Return to Top</a>
             <p>These are all hobby digital design projects:</p>
-            <div id="designs-card-container">
-                <div class="designs-card" id="designs-parks-container">
+            <div id="designs-container" class="sgg-card-container">
+                <div class="designs-card" id="designs-parks-container" style="margin-right: 20px;">
                     <h2>Mock WPA Parks Posters</h2>
                     <div id="designs-parks-images">
                         <img src="images/designs_BLP.jpg" alt="">
                         <img src="images/designs_strawberry.jpg" alt="">
                     </div>
-                    <p>These are pictures edited to appear in the painted style of 1930s WPA posters. Pictures taken by Miranda Crosby and Rachel Ruminer. ICC logo courtesy of Idaho Conservation Corps.</p>
+                    <p>These are pictures edited to appear in the painted style of 1930s WPA posters. Pictures taken by
+                        Miranda Crosby and Rachel Ruminer. ICC logo courtesy of Idaho Conservation Corps.</p>
                 </div>
                 <div class="designs-card" id="designs-math-container">
                     <h2>Animated Math Video</h2>
                     <div class="video-container">
                         <video muted=1 allow="autoplay" src="videos/Designs_math.mp4" class="designs-video"></video>
                     </div>
-                    <p>A video created off of hobby math research using the python library <a href="https://www.manim.community/" target="_blank">Manim</a> to generate and combine animations.
-                    <br>Full video link <a href="https://youtu.be/frAZS9erEhE" target="_blank">here</a>.</p>
+                    <p>A video created off of hobby math research using the Python library <a
+                            href="https://www.manim.community/" target="_blank">Manim</a> to generate and combine
+                        animations.
+                        <br>Full video link <a href="https://youtu.be/frAZS9erEhE" target="_blank">here</a>.
+                    </p>
                 </div>
             </div>
         </div>
         <div id="work">
             <h1 id="work-title">Work Experience</h1>
+            <a class="returntotop" onclick="window.scrollTo({top: 0, behavior: 'smooth'})">Return to Top</a>
             <p>All other work experience:</p>
-            <div id="work-card-container">
+            <div id="work-container" class="sgg-card-container">
                 <div class="work-card">
-                    <h3 class="work-card-title"><a href="https://idahocc.org/" target="_blank">Idaho Conservation Corps (ICC)</a></h3>
+                    <h3 class="work-card-title"><a href="https://idahocc.org/" target="_blank">Idaho Conservation Corps
+                            (ICC)</a></h3>
                     <div id="work-icc-columns">
                         <img class="work-image" src="images/Work_ICC.png" alt="">
-                        <div style="margin-left: -5vw; overflow: hidden;">
-                            <p>I have completed two five-week <br>(200 work-hour) sessions with Idaho Conservation Corps on a youth camping crew. Work involved: </p>
-                                <ul>
-                                    <li><strong style="font-size: 1.1em;">Collaboration</strong> with crew members, crew leads, and project partners.</li>
-                                    <li><strong style="font-size: 1.1em;">Trail Maintenance</strong> in the Malheur National Forest (OR), <br>Payette National Forest (ID),<br> and the Frank Church Wilderness (ID)</li>
-                                    <li><strong style="font-size: 1.1em;">Logging</strong> in the Frank Church Wilderness (ID)</li>
-                                    <li><strong style="font-size: 1.1em;">Invasive Removal</strong> at the Bonneville Lock and Damn (WA)</li>
-                                </ul>
-                            <p>Five of ten weeks included <br><strong style="font-size: 1.1em;">Leadership Development</strong> through ICC's Backcountry Leadership Program (BLP)</p>
+                        <div style="width: 65%">
+                            <p>I have completed two <span class="nowrap">five-week (200 work-hour)</span> sessions with Idaho Conservation Corps
+                                on a youth camping crew. Work involved: </p>
+                            <ul id="work-icc-list">
+                                <li><strong style="font-size: 1.1em;">Collaboration</strong> with crew members, crew
+                                    leads, and project partners.</li>
+                                <li><strong style="font-size: 1.1em;">Trail Maintenance</strong> in the 
+                                    <br>&emsp;Malheur National Forest (OR), 
+                                    <br>&emsp;Payette National Forest (ID),
+                                    <br>&emsp;and the Frank Church Wilderness (ID)</li>
+                                <li><strong style="font-size: 1.1em;">Logging</strong> in the Frank Church Wilderness
+                                    (ID)</li>
+                                <li><strong style="font-size: 1.1em;">Invasive Removal</strong> at the Bonneville Lock
+                                    and Damn (WA)</li>
+                            </ul>
+                            <p>Five of ten weeks included <strong style="font-size: 1.1em;">Leadership Development</strong> through ICC's <span class="nowrap">Backcountry Leadership Program (BLP)</span></p>
                         </div>
-                        
+
                     </div>
                 </div>
-                
+
             </div>
         </div>
     </div>
