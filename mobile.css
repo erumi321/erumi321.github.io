@@ -1,0 +1,65 @@
+@media only screen and (max-width: 900px) {
+    .sgg-card {
+        width: 60vw !important;
+    }
+    .designs-card {
+        width: 60vw;
+        margin-bottom: 10px;
+    }
+
+    .returntotop {
+        font-size: 20px;
+    }
+
+    #UI-ron {
+        margin-right: 0;
+    }
+
+    #designs-parks-container {
+        margin-right: 0;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    :root {
+        font-size: 18px;
+    }
+    #hero-personalimage {
+        z-index: 0;
+        width: 40vw;
+        top: 30vw;
+        right: 2vw;
+    }
+
+    #hero-header {
+        margin-top: -25vh;
+    }
+    .logo {
+        width: 2vh;
+        height: 2vh;
+    }
+    a {
+        word-break: break-all;
+    }
+    .nowrap {
+        white-space: initial;
+    }
+    #toc {
+        display: block;
+    }
+    #toc button {
+        display: block;
+        width: 60vw;
+        height: 12vw;
+    }
+    .work-image {
+        display: block;
+    }
+    #work-icc-columns {
+        flex-direction: column;
+    }
+    #icc-description {
+        width: 95%;
+        margin-left: 5%;
+    }
+}

@@ -11,6 +11,7 @@
         rel="stylesheet">
 
     <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="mobile.css">
     <title>erumi321</title>
 </head>
 
@@ -20,9 +21,9 @@
     <div id="hero">
         <h1 id="hero-header">Hello, I'm <br> Eli Ruminer</h1>
         <h3 id="hero-username">@erumi321</h3>
-        <a href="https://github.com/erumi321"><img class="logo" src="images/github-mark.png" alt="Github Logo"></a>
-        <a href="https://x.com/erumi321"><img class="logo" src="images/twitter-mark.png" alt="Twitter/X Logo"></a>
-        <a href="mailto: erumi321@gmail.com"><img class="logo" src="images/mail-mark.svg" alt="Email Icon"></a>
+        <a href="https://github.com/erumi321" tabindex="-1"><img class="logo" src="images/github-mark.png" alt="Github Logo"></a>
+        <a href="https://x.com/erumi321" tabindex="-1"><img class="logo" src="images/twitter-mark.png" alt="Twitter/X Logo"></a>
+        <a href="mailto: erumi321@gmail.com" tabindex="-1"><img class="logo" src="images/mail-mark.svg" alt="Email Icon"></a>
         <h5 id="hero-subheader"><u>Hobby developer</u> from Massachusetts
             <br><u>Computer Science</u> student at RPI
             <br><u>Work</u> down below
@@ -44,18 +45,19 @@
 
     <div id="main">
         <div id="sgg">
-            <h1 id="sgg-title" class="largetitle">Supergiant Games</h1>
-            <a class="returntotop" onclick="window.scrollTo({top: 0, behavior: 'smooth'})">Return to Top</a>
-            <p>This is all work done as mods or tools to the games Pyre, Hades, and Hades 2 developed and produced by
+            <h1 class="sectiontoptext" id="sgg-title">Supergiant Games</h1>
+            <a class="returntotop sectiontoptext" onclick="window.scrollTo({top: 0, behavior: 'smooth'})">Return to Top</a>
+            <p class="sectiontoptext">This is all work done as mods or tools to the games Pyre, Hades, and Hades 2 developed and produced by
                 Supergiant Games (<a href="https://www.supergiantgames.com/"
                     target="_blank">https://www.supergiantgames.com</a>)</p>
+            <p class="sectiontoptext">All menus shown here were made utilizing only resources and images found within Supergiant Game's
+                games Pyre, Hades, and Hades 2:</p>
             <div id="sgg-container-parent">
                 <div id="sgg-UI-container">
                     <h1 class="sgg-sectiontitle" id="sgg-UI-title">UI</h1>
-                    <p>All menus shown here were made utilizing only resources and images found within Supergiant Game's
-                        games Pyre, Hades, and Hades 2:</p>
+
                     <div class="sgg-card-container">
-                        <div class="sgg-card" id="UI-ron" style="margin-right: 3vw;">
+                        <div class="sgg-card" id="UI-ron">
                             <h2 class="sgg-card-title">Pyre in Hades</h2>
                             <div class="video-container">
                                 <video muted=1 allow="autoplay" src="videos/UI_ron.mp4" class="sgg-video"></video>
@@ -112,11 +114,11 @@
             </div>
         </div>
         <div id="designs">
-            <h1 id="designs-title" class="largetitle">Digital Designs</h1>
-            <a class="returntotop" onclick="window.scrollTo({top: 0, behavior: 'smooth'})">Return to Top</a>
-            <p>These are all hobby digital design projects:</p>
+            <h1 class="sectiontoptext" id="designs-title">Digital Designs</h1>
+            <a class="returntotop sectiontoptext" onclick="window.scrollTo({top: 0, behavior: 'smooth'})">Return to Top</a>
+            <p class="sectiontoptext">These are all hobby digital design projects:</p>
             <div id="designs-container" class="sgg-card-container">
-                <div class="designs-card" id="designs-parks-container" style="margin-right: 20px;">
+                <div class="designs-card" id="designs-parks-container">
                     <h2>Mock WPA Parks Posters</h2>
                     <div id="designs-parks-images">
                         <img src="images/designs_BLP.jpg" alt="">
@@ -139,31 +141,35 @@
             </div>
         </div>
         <div id="work">
-            <h1 id="work-title">Work Experience</h1>
-            <a class="returntotop" onclick="window.scrollTo({top: 0, behavior: 'smooth'})">Return to Top</a>
-            <p>All other work experience:</p>
+            <h1 class="sectiontoptext" id="work-title">Work Experience</h1>
+            <a class="returntotop sectiontoptext" onclick="window.scrollTo({top: 0, behavior: 'smooth'})">Return to Top</a>
+            <p class="sectiontoptext">All other work experience:</p>
             <div id="work-container" class="sgg-card-container">
                 <div class="work-card">
                     <h3 class="work-card-title"><a href="https://idahocc.org/" target="_blank">Idaho Conservation Corps
                             (ICC)</a></h3>
                     <div id="work-icc-columns">
                         <img class="work-image" src="images/Work_ICC.png" alt="">
-                        <div style="width: 65%">
-                            <p>I have completed two <span class="nowrap">five-week (200 work-hour)</span> sessions with Idaho Conservation Corps
+                        <div id="icc-description">
+                            <p>I have completed two <span class="nowrap">five-week (200 work-hour)</span> sessions with
+                                Idaho Conservation Corps
                                 on a youth camping crew. Work involved: </p>
                             <ul id="work-icc-list">
                                 <li><strong style="font-size: 1.1em;">Collaboration</strong> with crew members, crew
                                     leads, and project partners.</li>
-                                <li><strong style="font-size: 1.1em;">Trail Maintenance</strong> in the 
-                                    <br>&emsp;Malheur National Forest (OR), 
+                                <li><strong style="font-size: 1.1em;">Trail Maintenance</strong> in the
+                                    <br>&emsp;Malheur National Forest (OR),
                                     <br>&emsp;Payette National Forest (ID),
-                                    <br>&emsp;and the Frank Church Wilderness (ID)</li>
+                                    <br>&emsp;and the Frank Church Wilderness (ID)
+                                </li>
                                 <li><strong style="font-size: 1.1em;">Logging</strong> in the Frank Church Wilderness
                                     (ID)</li>
                                 <li><strong style="font-size: 1.1em;">Invasive Removal</strong> at the Bonneville Lock
                                     and Damn (WA)</li>
                             </ul>
-                            <p>Five of ten weeks included <strong style="font-size: 1.1em;">Leadership Development</strong> through ICC's <span class="nowrap">Backcountry Leadership Program (BLP)</span></p>
+                            <p>Five of ten weeks included <strong style="font-size: 1.1em;">Leadership
+                                    Development</strong> through ICC's <span class="nowrap">Backcountry Leadership
+                                    Program (BLP)</span></p>
                         </div>
 
                     </div>
