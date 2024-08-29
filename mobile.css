@@ -34,6 +34,9 @@
     #hero-header {
         margin-top: -25vh;
     }
+    #hero-subheader {
+        font-size: 1.7em;
+    }
     .logo {
         width: 2vh;
         height: 2vh;
@@ -51,6 +54,10 @@
         display: block;
         width: 60vw;
         height: 12vw;
+        transform: scale(1);
+    }
+    #toc button:hover {
+        transform: scale(1.1);
     }
     .work-image {
         display: block;
